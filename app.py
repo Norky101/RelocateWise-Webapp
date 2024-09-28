@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-
+import openai_local
 import requests
 
 
@@ -23,8 +23,8 @@ def handle_post():
 
     prompt = f"""I am a/an {citizenship_status} planning to live in {location}. I am {more_info}. I plan to attend {university}. Please give me a breakdown of my {category} costs. 
 When you give the output, make sure its a json object. Do not add any information to the response, just the json object"""
-
-    return jsonify({"received": prompt})
+    response = openai_local.generate_text(prompt)
+    return jsonify({"received": response})
 
 if __name__ == '__main__':
     app.run(debug=True)
