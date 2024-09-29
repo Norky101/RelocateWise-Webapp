@@ -21,7 +21,7 @@ function App() {
     setCategory(data)
 
     console.log(dataFromChild)
-    coneole.log(dataReceived)
+    console.log(dataReceived)
     setCategorySelectedState(true)
   }
   return (
