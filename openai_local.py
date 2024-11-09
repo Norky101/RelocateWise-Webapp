@@ -11,7 +11,7 @@ def generate_text(prompt_input):
     try:
         # Call the OpenAI API with the chat model
         client = OpenAI(
-            api_key="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"
+            api_key=""
         )
 
         response = client.chat.completions.create(
