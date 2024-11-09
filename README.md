@@ -107,9 +107,8 @@ We welcome contributions! Please follow these steps:
 5. Open a Pull Request
 
 
-## 🙏 Acknowledgments
+## How to run 
 
-- OpenAI for providing the AI capabilities
-- Various data providers and APIs
-- Contributors and beta testers
+1. Run the 'app.py' in one terminal (backend)
+2. Run 'npm start' to build react frontend
 
