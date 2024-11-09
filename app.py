@@ -1,18 +1,17 @@
 from flask import Flask, request, jsonify
 import openai_local
-import requests
-
 
 app = Flask(__name__)
+print("running")
 
-# # Route to handle GET requests
-# @app.route('/get', methods=['GET'])
-# def handle_get():
-#     data = request.args  # Get query parameters from the URL
-#     return jsonify({"received": data})
+# Add a root route for testing
+@app.route('/')
+def home():
+    return 'Server is running'
 
 # Route to handle POST requests
 @app.route('/post', methods=['POST'])
+
 def handle_post():
     data = request.json  # Expecting JSON data in POST body
     citizenship_status = data['citizenship_status']
@@ -23,6 +22,7 @@ def handle_post():
 
     prompt = f"""I am a/an {citizenship_status} planning to live in {location}. I am {more_info}. I plan to attend {university}. Please give me a breakdown of my {category} costs. 
 When you give the output, make sure its a json object. Do not add any information to the response, just the json object"""
+    
     response = openai_local.generate_text(prompt)
     return jsonify({"received": response})
 
