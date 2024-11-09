@@ -26,4 +26,3 @@ def generate_text(prompt_input):
         return(response.choices[0].message.content)
     except Exception as e:
         raise Exception(e)
-
