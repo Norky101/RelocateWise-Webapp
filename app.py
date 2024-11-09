@@ -28,5 +28,3 @@ When you give the output, make sure its a json object. Do not add any informatio
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
