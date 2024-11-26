@@ -1,14 +1,14 @@
-# LiveCost Navigator 🌎
+# RelocateWise 🌎
 
 A smart cost-of-living analysis tool that helps you make informed decisions about relocating by providing personalized insights based on your lifestyle preferences and economic requirements.
 
 ## 🎯 Overview
 
-LiveCost Navigator empowers users to:
+RelocateWise empowers users to:
 - Compare living costs across different geographical areas
 - Get personalized cost estimates based on lifestyle preferences
 - Access real-time market data for housing, groceries, utilities, and more
-- Visualize cost breakdowns and economic factors in easy to understand graphs
+- Visualize cost breakdowns and economic factors in easy-to-understand graphs
 - Make data-driven decisions about relocation
 
 ## ⚙️ Features
